@@ -90,6 +90,6 @@ Lecturer
 
 
 <video width="600" controls>
-  <source src="Mock-video-interview.mp4" type="video/mp4">
+  <source src="https://drive.google.com/file/d/1A5gIo5xroV4-DZjZedeMbcE-o2k68nf2/view?usp=drive_link " type="video/mp4">
 
   </video>
