@@ -88,8 +88,5 @@ Lecturer
 
 📞 082 708 0627
 
-<iframe
-   src="https://drive.google.com/file/d/ 1A5gIo5xroV4/preview" 
-     width="600"height="315"allow="autoplay">
-</iframe
+[▶ Watch My Video](https://drive.google.com/file/d/1A5gIo5xroV4-DZjZedeMbcE-o2k68nf2/view?usp=sharing)
 
