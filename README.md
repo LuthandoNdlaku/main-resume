@@ -90,3 +90,17 @@ Lecturer
 
 [▶ Watch My Video](https://drive.google.com/file/d/1A5gIo5xroV4-DZjZedeMbcE-o2k68nf2/view?usp=sharing)
 
+
+### Reflection on Markdown
+
+Using the STAR method, I reflected on creating my CV with Markdown in my GitHub README. In this situation, I wanted a clean, professional way to present my skills and experience online. My task was to structure and format my CV using Markdown so it would be readable and visually appealing on GitHub. I took action by learning Markdown syntax, organizing sections clearly, and using headings, lists, and links to highlight key information. As a result, I produced a well-structured, accessible CV that showcases my work effectively and strengthened my documentation and formatting skills.
+
+Reflection on Mock Video
+### Reflection on Mock Video 
+
+During my mock video experience, I had the opportunity to practice presenting myself in a recorded setting. I focused on speaking clearly, maintaining good posture, and organizing my thoughts before responding. While I initially felt a bit nervous, I became more confident as I continued. This experience helped me recognize the importance of preparation and clear communication, and I can see how it will improve my performance in future interviews or presentations.
+
+### Refection on GitHub pages
+
+Using GitHub Pages allowed me to turn my repository into a live website and showcase my work more professionally. I focused on organizing my content, applying basic styling, and ensuring everything displayed correctly online. At first, I found the setup and configuration a bit challenging, but I improved as I experimented and followed documentation. This experience helped me understand how to publish projects on the web and strengthened my confidence in sharing my work publicly.
+
