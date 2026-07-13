@@ -90,11 +90,9 @@ Lecturer
 
 📞 082 708 0627
 
+### MOCK VIDEO INTERVIEW
 https://github.com/user-attachments/assets/4103d0d1-e25f-4b0c-bd60-0fd040f563ea
 
-
-
-[▶ Watch My Video](https://drive.google.com/file/d/1A5gIo5xroV4-DZjZedeMbcE-o2k68nf2/view?usp=sharing)
 
 
 ### Reflection on Markdown
