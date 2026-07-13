@@ -94,16 +94,10 @@ Lecturer
 ## MOCK VIDEO INTERVIEW
 
 
-<iframe
-    width="700"
-    height="394"
-    src="https://www.youtube.com/embed/VIDEO_ID"
-    title="Mock Video Interview"
-    frameborder="0"
-    allowfullscreen>
-</iframe>
-
-
+<video width="800" controls>
+  <source src="videos/demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 
 ### Reflection on Markdown
