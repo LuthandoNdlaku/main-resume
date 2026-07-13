@@ -94,11 +94,14 @@ Lecturer
 ## MOCK VIDEO INTERVIEW
 
 
-<video width="700" controls>
-  <source src="Mock-video-interview-important.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
+<iframe
+    width="700"
+    height="394"
+    src="https://www.youtube.com/embed/VIDEO_ID"
+    title="Mock Video Interview"
+    frameborder="0"
+    allowfullscreen>
+</iframe>
 
 
 
