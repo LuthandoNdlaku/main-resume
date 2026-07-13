@@ -90,21 +90,10 @@ Lecturer
 
 📞 082 708 0627
 
-### MOCK VIDEO INTERVIEW
-https://github.com/user-attachments/assets/4103d0d1-e25f-4b0c-bd60-0fd040f563ea
-
-
-
-
-
-
-
 
 ## MOCK VIDEO INTERVIEW
-
 <video width="700" controls>
-  <source src="Mock-video-interview.mp4" type="video/mp4">
-  Your browser does not support the video tag.
+  <source src="videos/Mock-video-interview.mp4" type="video/mp4">
 </video>
 
 
