@@ -93,14 +93,17 @@ Lecturer
 
 ## MOCK VIDEO INTERVIEW
 
+## 🎥 Mock Video Interview
 
-<video width="800" controls>
-  <source src="videos/demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-
-### Reflection on Markdown
+<iframe
+    width="315"
+    height="560"
+    src="https://www.youtube.com/embed/iJlWR8e70GU"
+    title="Mock Video Interview"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+</iframe>
 
 Using the STAR method, I reflected on creating my CV with Markdown in my GitHub README. In this situation, I wanted a clean, professional way to present my skills and experience online. My task was to structure and format my CV using Markdown so it would be readable and visually appealing on GitHub. I took action by learning Markdown syntax, organizing sections clearly, and using headings, lists, and links to highlight key information. As a result, I produced a well-structured, accessible CV that showcases my work effectively and strengthened my documentation and formatting skills.
 
