@@ -115,3 +115,28 @@ During my mock video experience, I had the opportunity to practice presenting my
 
 Using GitHub Pages allowed me to turn my repository into a live website and showcase my work more professionally. I focused on organizing my content, applying basic styling, and ensuring everything displayed correctly online. At first, I found the setup and configuration a bit challenging, but I improved as I experimented and followed documentation. This experience helped me understand how to publish projects on the web and strengthened my confidence in sharing my work publicly.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
