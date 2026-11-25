@@ -1,22 +1,191 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Projects | Luthando Ndlaku</title>
-<meta name="description" content="E-portfolio of Luthando Ndlaku, ICT student in Cape Town specialising in web design and development.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css"><link rel="icon" href="favicon.svg" type="image/svg+xml"></head><body>
-<header><div class="wrap"><nav aria-label="Main"><a class="brand" href="index.html">Luthando Ndlaku</a><button id="menu" class="ghost" aria-expanded="false" aria-controls="links">Menu</button><ul id="links">
-<li><a href="index.html">Home</a></li>
-<li><a href="profile.html">Profile</a></li>
-<li><a href="projects.html" aria-current="page">Projects</a></li>
-<li><a href="evidence.html">Evidence</a></li>
-<li><a href="reflections.html">Reflections</a></li>
-<li><a href="agile.html">Agile</a></li>
-<li><a href="contact.html">Contact</a></li>
-<li><button id="theme" class="ghost" aria-pressed="false">Theme</button></li></ul></nav></div></header><main><div class="wrap">
-<h1 class="grad" style="font-size:clamp(2.2rem,7vw,3.5rem)">Projects</h1><p class="prose">Websites I designed and built. Open a live site to try it yourself.</p>
-<div class="pgrid">
-<article class="pcard"><div class="cover c1">CapeRide Shuttle</div><div class="pbody"><h3>Cape Ride Shuttle Service</h3><p>A booking-focused website for a Cape Town shuttle operator. Routes and fares are easy to read on a phone, and the enquiry form collects everything needed in one pass.</p><ul class="chips"><li>React</li><li>Tailwind CSS</li><li>Figma</li></ul><div class="actions"><a class="btn" href="https://caperideshuttle1.freehosting.dev/" target="_blank" rel="noopener">Visit live site</a><a class="btn ghost" href="https://luthando-creative-room.base44.app/case-studies/caperide" target="_blank" rel="noopener">Case study</a></div></div></article>
-<article class="pcard"><div class="cover c2">Creative Room</div><div class="pbody"><h3>Luthando Creative Room</h3><p>My freelance web design practice site for small businesses in Cape Town. It covers services, selected work and case studies, and is built to be accessible, fast and clear.</p><ul class="chips"><li>Web design</li><li>Responsive</li><li>Accessibility</li></ul><div class="actions"><a class="btn" href="https://luthando-creative-room.base44.app/" target="_blank" rel="noopener">Visit live site</a></div></div></article>
-<article class="pcard"><div class="cover c3">StudentEats</div><div class="pbody"><h3>StudentEats (concept)</h3><p>A marketplace concept where students sell home-cooked meals to other students near campus, designed around trust, price clarity and pickup. I also run it as my team’s Agile project.</p><ul class="chips"><li>Figma</li><li>React</li><li>Tailwind CSS</li></ul><div class="actions"><a class="btn" href="agile.html">See the Agile work</a><a class="btn ghost" href="https://luthando-creative-room.base44.app/case-studies/studenteats" target="_blank" rel="noopener">Case study</a></div></div></article></div>
-<p class="note">My two school projects, the Online Education System and The Cape Safety Website, are on the <a href="evidence.html">Evidence</a> page.</p></div></main><footer><div class="wrap">© 2026 Luthando Ndlaku · Cape Town, South Africa · <a href="https://github.com/LuthandoNdlaku">GitHub</a> · <a href="https://www.linkedin.com/in/luthando-ndlaku">LinkedIn</a></div></footer><script src="script.js" defer></script></body></html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects | Luthando Ndlaku</title>
+    <meta name="description" content="E-portfolio of Luthando Ndlaku, ICT student in Cape Town specialising in web design and development.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <!-- Extra Styles for StudentEats Image Gallery Modal -->
+    <style>
+        /* Modal Background */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            z-index: 9999;
+            overflow-y: auto;
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+        
+        /* Modal Content Box */
+        .modal-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+            animation: slideUp 0.3s ease-out;
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Close Button */
+        .close-modal {
+            position: absolute;
+            top: 15px; right: 20px;
+            font-size: 2rem;
+            color: #333;
+            cursor: pointer;
+            line-height: 1;
+            background: none;
+            border: none;
+        }
+        .close-modal:hover { color: #e65100; }
+
+        /* Gallery Grid */
+        .se-gallery {
+            display: grid;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .se-gallery img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            object-fit: contain;
+            background: #f8f9fa;
+        }
+
+        /* Mobile responsiveness for gallery */
+        @media (min-width: 768px) {
+            .se-gallery { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <div class="wrap">
+        <nav aria-label="Main">
+            <a class="brand" href="index.html">Luthando Ndlaku</a>
+            <button id="menu" class="ghost" aria-expanded="false" aria-controls="links">Menu</button>
+            <ul id="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="projects.html" aria-current="page">Projects</a></li>
+                <li><a href="evidence.html">Evidence</a></li>
+                <li><a href="reflections.html">Reflections</a></li>
+                <li><a href="agile.html">Agile</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button id="theme" class="ghost" aria-pressed="false">Theme</button></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="wrap">
+        <h1 class="grad" style="font-size:clamp(2.2rem,7vw,3.5rem)">Projects</h1>
+        <p class="prose">Websites I designed and built. Open a live site to try it yourself.</p>
+        
+        <div class="pgrid">
+            
+            <!-- Project 1: CapeRide -->
+            <article class="pcard">
+                <div class="cover c1">CapeRide Shuttle</div>
+                <div class="pbody">
+                    <h3>Cape Ride Shuttle Service</h3>
+                    <p>A booking-focused website for a Cape Town shuttle operator. Routes and fares are easy to read on a phone, and the enquiry form collects everything needed in one pass.</p>
+                    <ul class="chips"><li>React</li><li>Tailwind CSS</li><li>Figma</li></ul>
+                    <div class="actions">
+                        <a class="btn" href="https://caperideshuttle1.freehosting.dev/" target="_blank" rel="noopener">Visit live site</a>
+                        <a class="btn ghost" href="https://luthando-creative-room.base44.app/case-studies/caperide" target="_blank" rel="noopener">Case study</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 2: Creative Room -->
+            <article class="pcard">
+                <div class="cover c2">Creative Room</div>
+                <div class="pbody">
+                    <h3>Luthando Creative Room</h3>
+                    <p>My freelance web design practice site for small businesses in Cape Town. It covers services, selected work and case studies, and is built to be accessible, fast and clear.</p>
+                    <ul class="chips"><li>Web design</li><li>Responsive</li><li>Accessibility</li></ul>
+                    <div class="actions">
+                        <a class="btn" href="https://luthando-creative-room.base44.app/" target="_blank" rel="noopener">Visit live site</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 3: StudentEats (UPDATED) -->
+            <article class="pcard">
+                <div class="cover c3">StudentEats</div>
+                <div class="pbody">
+                    <h3>StudentEats (concept)</h3>
+                    <p>A marketplace concept where students sell home-cooked meals to other students near campus, designed around trust, price clarity and pickup. I also run it as my team’s Agile project.</p>
+                    <ul class="chips"><li>Figma</li><li>React</li><li>Tailwind CSS</li></ul>
+                    <div class="actions">
+                        <a class="btn" href="agile.html">See the Agile work</a>
+                        <a class="btn ghost" href="https://luthando-creative-room.base44.app/case-studies/studenteats" target="_blank" rel="noopener">Case study</a>
+                        <!-- NEW BUTTON ADDED HERE -->
+                        <button class="btn ghost" onclick="document.getElementById('seModal').style.display='block'">Images of project</button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+        
+        <p class="note">My two school projects, the Online Education System and The Cape Safety Website, are on the <a href="evidence.html">Evidence</a> page.</p>
+    </div>
+</main>
+
+<footer>
+    <div class="wrap">© 2026 Luthando Ndlaku · Cape Town, South Africa · <a href="https://github.com/LuthandoNdlaku">GitHub</a> · <a href="https://www.linkedin.com/in/luthando-ndlaku">LinkedIn</a></div>
+</footer>
+
+<!-- STUDENTEATS IMAGE MODAL -->
+<!-- STUDENTEATS IMAGE MODAL -->
+<div id="seModal" class="modal-overlay" onclick="if(event.target === this) this.style.display='none'">
+    <div class="modal-content">
+        <button class="close-modal" onclick="document.getElementById('seModal').style.display='none'" aria-label="Close images">&times;</button>
+        <h2 style="margin-bottom: 5px;">StudentEats Screenshots</h2>
+        <p style="color:#666; margin-bottom: 20px;">Key screens from the application flow.</p>
+        
+        <div class="se-gallery">
+            <!-- 
+                REPLACE 'YOUR_USERNAME' BELOW WITH YOUR ACTUAL GITHUB USERNAME 
+                AND ENSURE FILENAMES MATCH YOUR REPOSITORY EXACTLY 
+            -->
+            <img src="https://raw.githubusercontent.com/YOUR_USERNAME/your-repo-name/main/studenteats-home.png" alt="StudentEats Home Page with Categories and Featured Meals">
+            
+            <img src="https://raw.githubusercontent.com/YOUR_USERNAME/your-repo-name/main/studenteats-cart.png" alt="StudentEats Shopping Cart Sidebar">
+            
+            <img src="https://raw.githubusercontent.com/YOUR_USERNAME/your-repo-name/main/studenteats-checkout.png" alt="StudentEats Checkout and Payment Method Page">
+            
+            <img src="https://raw.githubusercontent.com/YOUR_USERNAME/your-repo-name/main/studenteats-signup.png" alt="StudentEats Create Account Sign Up Form">
+            
+            <img src="https://raw.githubusercontent.com/YOUR_USERNAME/your-repo-name/main/studenteats-confirmation.png" alt="StudentEats Order Confirmed Success Screen">
+        </div>
+    </div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
