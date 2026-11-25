@@ -1,33 +1,144 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Profile | Luthando Ndlaku</title>
-<meta name="description" content="E-portfolio of Luthando Ndlaku, ICT student in Cape Town specialising in web design and development.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css"><link rel="icon" href="favicon.svg" type="image/svg+xml"></head><body>
-<header><div class="wrap"><nav aria-label="Main"><a class="brand" href="index.html">Luthando Ndlaku</a><button id="menu" class="ghost" aria-expanded="false" aria-controls="links">Menu</button><ul id="links">
-<li><a href="index.html">Home</a></li>
-<li><a href="profile.html" aria-current="page">Profile</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="evidence.html">Evidence</a></li>
-<li><a href="reflections.html">Reflections</a></li>
-<li><a href="agile.html">Agile</a></li>
-<li><a href="contact.html">Contact</a></li>
-<li><button id="theme" class="ghost" aria-pressed="false">Theme</button></li></ul></nav></div></header><main><div class="wrap">
-<section class="intro"><img src="images/profile.jpg" width="720" height="1280" alt="Luthando Ndlaku standing in a black suit and white shirt beside the Afrihack Connect banner" fetchpriority="high">
-<div><h1 class="grad" style="font-size:clamp(2.2rem,7vw,3.5rem)">Profile</h1><p>Final-year ICT student in Cape Town, building responsive, user-centred websites and looking for a WIL or internship placement.</p></div></section>
-<div class="cols"><section class="panel"><h2>Objective</h2>
-<p>Final-year ICT student specialising in Multimedia Applications, Web Design/Development and UX/UI. I’m skilled in HTML, CSS and JavaScript, with a strong focus on responsive design and user-centred solutions, and I’m very interested in data analytics.</p>
-<p>I’m seeking a Work Integrated Learning (WIL) or internship opportunity to apply my technical skills, contribute to innovative projects and gain real-world industry experience.</p></section>
-<section class="panel"><h2>Education</h2>
-<h3>Cape Peninsula University of Technology</h3><p>District Six, Western Cape<br>Diploma in Information &amp; Communication Technology (2024–2026)</p>
-<h3>Mount Currie Senior Secondary School</h3><p>Kokstad, KwaZulu-Natal<br>NQF Level 4 / Matric (2018–2022)</p></section></div>
-<section class="panel award"><h2>Awards</h2><ul><li>Faculty Dean’s Special Award (Teamwork)</li><li>Afrihack Connect Hackathon, “School Dashboard” Award (2025)</li></ul></section>
-<div class="cols"><section class="panel"><h2>Technical skills</h2>
-<h3>Languages</h3><ul class="chips"><li>Python</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>MySQL</li></ul>
-<h3>Frameworks and libraries</h3><ul class="chips"><li>Node.js</li><li>React (basic)</li></ul>
-<h3>Tools and software</h3><ul class="chips"><li>GitHub</li><li>Figma</li><li>Adobe Illustrator</li><li>Adobe InDesign</li><li>Canva</li></ul></section>
-<section class="panel"><h2>Soft skills</h2><ul class="chips"><li>Problem-solving</li><li>Adaptability</li><li>Communication</li><li>Time management</li><li>Attention to detail</li></ul>
-<h2>Contact</h2><p><a href="mailto:231144113@mycput.ac.za">231144113@mycput.ac.za</a><br>065 642 2911<br>Cape Town, South Africa</p>
-<p>References are available on request.</p></section></div>
-</div></main><footer><div class="wrap">© 2026 Luthando Ndlaku · Cape Town, South Africa · <a href="https://github.com/LuthandoNdlaku">GitHub</a> · <a href="https://www.linkedin.com/in/luthando-ndlaku">LinkedIn</a></div></footer><script src="script.js" defer></script></body></html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile | Luthando Ndlaku</title>
+    <meta name="description" content="E-portfolio of Luthando Ndlaku, ICT student in Cape Town specialising in web design and development.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <!-- Specific Styles for Profile Picture -->
+    <style>
+        /* Container to align image and text nicely */
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap; /* Allows stacking on mobile */
+        }
+
+        /* The Profile Image Styling */
+        .profile-img {
+            width: 180px;       /* Fixed size */
+            height: 180px;      /* Fixed size */
+            object-fit: cover;  /* Crops image to fill circle without stretching */
+            border-radius: 50%; /* Makes it a perfect circle */
+            border: 4px solid #e65100; /* Orange border matching your theme */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Subtle shadow for depth */
+            background-color: #f0f0f0; /* Fallback color */
+        }
+
+        /* Mobile adjustment */
+        @media (max-width: 600px) {
+            .profile-header {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+            .profile-img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <div class="wrap">
+        <nav aria-label="Main">
+            <a class="brand" href="index.html">Luthando Ndlaku</a>
+            <button id="menu" class="ghost" aria-expanded="false" aria-controls="links">Menu</button>
+            <ul id="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html" aria-current="page">Profile</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="evidence.html">Evidence</a></li>
+                <li><a href="reflections.html">Reflections</a></li>
+                <li><a href="agile.html">Agile</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button id="theme" class="ghost" aria-pressed="false">Theme</button></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="wrap">
+        
+        <!-- NEW PROFILE HEADER SECTION -->
+        <section class="profile-header">
+            <!-- 
+               IMPORTANT: Ensure your image file is named 'profile-pic.jpg' 
+               and is in the same folder as this HTML file. 
+            -->
+            <img src="profile-pic.jpg" alt="Luthando Ndlaku" class="profile-img" fetchpriority="high">
+            
+            <div>
+                <h1 class="grad" style="font-size:clamp(2.2rem,7vw,3.5rem); margin-bottom: 0.5rem;">Profile</h1>
+                <p style="font-size: 1.1rem; max-width: 600px;">Final-year ICT student in Cape Town, building responsive, user-centred websites and looking for a WIL or internship placement.</p>
+            </div>
+        </section>
+
+        <!-- Rest of your content remains exactly the same -->
+        <div class="cols">
+            <section class="panel">
+                <h2>Objective</h2>
+                <p>Final-year ICT student specialising in Multimedia Applications, Web Design/Development and UX/UI. I’m skilled in HTML, CSS and JavaScript, with a strong focus on responsive design and user-centred solutions, and I’m very interested in data analytics.</p>
+                <p>I’m seeking a Work Integrated Learning (WIL) or internship opportunity to apply my technical skills, contribute to innovative projects and gain real-world industry experience.</p>
+            </section>
+            <section class="panel">
+                <h2>Education</h2>
+                <h3>Cape Peninsula University of Technology</h3>
+                <p>District Six, Western Cape<br>Diploma in Information &amp; Communication Technology (2024–2026)</p>
+                <h3>Mount Currie Senior Secondary School</h3>
+                <p>Kokstad, KwaZulu-Natal<br>NQF Level 4 / Matric (2018–2022)</p>
+            </section>
+        </div>
+
+        <section class="panel award">
+            <h2>Awards</h2>
+            <ul>
+                <li>Faculty Dean’s Special Award (Teamwork)</li>
+                <li>Afrihack Connect Hackathon, “School Dashboard” Award (2025)</li>
+            </ul>
+        </section>
+
+        <div class="cols">
+            <section class="panel">
+                <h2>Technical skills</h2>
+                <h3>Languages</h3>
+                <ul class="chips"><li>Python</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>MySQL</li></ul>
+                <h3>Frameworks and libraries</h3>
+                <ul class="chips"><li>Node.js</li><li>React (basic)</li></ul>
+                <h3>Tools and software</h3>
+                <ul class="chips"><li>GitHub</li><li>Figma</li><li>Adobe Illustrator</li><li>Adobe InDesign</li><li>Canva</li></ul>
+            </section>
+            <section class="panel">
+                <h2>Soft skills</h2>
+                <ul class="chips"><li>Problem-solving</li><li>Adaptability</li><li>Communication</li><li>Time management</li><li>Attention to detail</li></ul>
+                <h2>Contact</h2>
+                <p><a href="mailto:231144113@mycput.ac.za">231144113@mycput.ac.za</a><br>065 642 2911<br>Cape Town, South Africa</p>
+                <p>References are available on request.</p>
+            </section>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <div class="wrap">© 2026 Luthando Ndlaku · Cape Town, South Africa · <a href="https://github.com/LuthandoNdlaku">GitHub</a> · <a href="https://www.linkedin.com/in/luthando-ndlaku">LinkedIn</a></div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
